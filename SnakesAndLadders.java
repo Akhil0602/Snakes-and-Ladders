@@ -162,6 +162,8 @@ class panel extends JPanel implements ActionListener
                     yp[0]=10;
                     s=tx1.getText()+" wins";
                     tx3.setText(s);
+                    st.removeActionListener(this);
+                    roll.removeActionListener(this);
                 }
                 else
                 {
@@ -181,7 +183,6 @@ class panel extends JPanel implements ActionListener
                          xp[0]+=70;
                          else
                          xp[0]-=70;
-                        
                          a--;
                         }
                         else{
@@ -192,9 +193,9 @@ class panel extends JPanel implements ActionListener
                     break;
                     k[0]=0;
                     if(j[0]%2==0)
-                    xp[0]+=70;
-                    else
-                    xp[0]-=70;
+                            xp[0]+=70;
+                           else
+                            xp[0]-=70;
                     yp[0]-=70;
                 }
                 repaint();
@@ -216,7 +217,19 @@ class panel extends JPanel implements ActionListener
                  xp[0]-=140;
                  pos1=46;
                  j[0]+=3;
-                 k[0]=5;
+                 k[0]=6;
+                 try{
+                     Thread.sleep(500);
+                    }
+                    catch(Exception exc){}
+                }
+                if(pos1==33)
+                {
+                 yp[0]-=70;
+                 xp[0]+=70;
+                 pos1=49;
+                 j[0]+=1;
+                 k[0]=9;
                  try{
                      Thread.sleep(500);
                     }
@@ -264,7 +277,7 @@ class panel extends JPanel implements ActionListener
                  xp[0]+=140;
                  pos1=92;
                  j[0]+=2;
-                 k[0]=1;
+                 k[0]=2;
                  try{
                      Thread.sleep(500);
                     }
@@ -278,7 +291,7 @@ class panel extends JPanel implements ActionListener
                     xp[0]-=140;
                     pos1=5;
                     j[0]-=2;
-                    k[0]=4;
+                    k[0]=5;
                     try{
                      Thread.sleep(500);
                     }
@@ -290,7 +303,7 @@ class panel extends JPanel implements ActionListener
                     xp[0]-=140;
                     pos1=3;
                     j[0]-=3;
-                    k[0]=2;
+                    k[0]=3;
                     try{
                      Thread.sleep(500);
                     }
@@ -301,7 +314,7 @@ class panel extends JPanel implements ActionListener
                     yp[0]+=210;
                     pos1=18;
                     j[0]-=3;
-                    k[0]=7;
+                    k[0]=8;
                     try{
                      Thread.sleep(500);
                     }
@@ -313,7 +326,7 @@ class panel extends JPanel implements ActionListener
                     xp[0]+=210;
                     pos1=31;
                     j[0]-=2;
-                    k[0]=0;
+                    k[0]=1;
                     try{
                      Thread.sleep(500);
                     }
@@ -325,7 +338,7 @@ class panel extends JPanel implements ActionListener
                     xp[0]-=70;
                     pos1=45;
                     j[0]-=2;
-                    k[0]=4;
+                    k[0]=5;
                     try{
                      Thread.sleep(500);
                     }
@@ -337,7 +350,7 @@ class panel extends JPanel implements ActionListener
                     xp[0]-=140;
                     pos1=58;
                     j[0]-=2;
-                    k[0]=7;
+                    k[0]=8;
                     try{
                      Thread.sleep(500);
                     }
@@ -349,7 +362,7 @@ class panel extends JPanel implements ActionListener
                     xp[0]-=70;
                     pos1=53;
                     j[0]-=3;
-                    k[0]=2;
+                    k[0]=3;
                     try{
                      Thread.sleep(500);
                     }
@@ -361,7 +374,7 @@ class panel extends JPanel implements ActionListener
                     xp[0]-=70;
                     pos1=41;
                     j[0]=4;
-                    k[0]=0;
+                    k[0]=1;
                     try{
                      Thread.sleep(500);
                     }
@@ -377,6 +390,8 @@ class panel extends JPanel implements ActionListener
                     yp[1]=10;
                     s=tx2.getText()+" wins";
                     tx3.setText(s);
+                    st.removeActionListener(this);
+                    roll.removeActionListener(this);
                 }
               else
               {
@@ -429,7 +444,19 @@ class panel extends JPanel implements ActionListener
                  xp[1]-=140;
                  pos2=46;
                  j[1]+=3;
-                 k[1]=5;
+                 k[1]=6;
+                 try{
+                     Thread.sleep(500);
+                    }
+                    catch(Exception exc){}
+                }
+                if(pos2==33)
+                {
+                 yp[1]-=70;
+                 xp[1]+=70;
+                 pos2=49;
+                 j[1]+=1;
+                 k[1]=9;
                  try{
                      Thread.sleep(500);
                     }
@@ -477,7 +504,7 @@ class panel extends JPanel implements ActionListener
                  xp[1]+=140;
                  pos2=92;
                  j[1]+=2;
-                 k[1]=1;
+                 k[1]=2;
                  try{
                      Thread.sleep(500);
                     }
@@ -491,7 +518,7 @@ class panel extends JPanel implements ActionListener
                     xp[1]-=140;
                     pos2=5;
                     j[1]-=2;
-                    k[1]=4;
+                    k[1]=5;
                     try{
                      Thread.sleep(500);
                     }
@@ -500,10 +527,10 @@ class panel extends JPanel implements ActionListener
                 if(pos2==40)
                 {
                     yp[1]+=210;
-                    xp[1]-=140;
+                    xp[1]+=140;
                     pos2=3;
                     j[1]-=3;
-                    k[1]=2;
+                    k[1]=3;
                     try{
                      Thread.sleep(500);
                     }
@@ -514,7 +541,7 @@ class panel extends JPanel implements ActionListener
                     yp[1]+=210;
                     pos2=18;
                     j[1]-=3;
-                    k[1]=7;
+                    k[1]=8;
                     try{
                      Thread.sleep(500);
                     }
@@ -526,7 +553,7 @@ class panel extends JPanel implements ActionListener
                     xp[1]+=210;
                     pos2=31;
                     j[1]-=2;
-                    k[1]=0;
+                    k[1]=1;
                     try{
                      Thread.sleep(500);
                     }
@@ -538,7 +565,7 @@ class panel extends JPanel implements ActionListener
                     xp[1]-=70;
                     pos2=45;
                     j[1]-=2;
-                    k[1]=4;
+                    k[1]=5;
                     try{
                      Thread.sleep(500);
                     }
@@ -550,7 +577,7 @@ class panel extends JPanel implements ActionListener
                     xp[1]-=140;
                     pos2=58;
                     j[1]-=2;
-                    k[1]=7;
+                    k[1]=8;
                     try{
                      Thread.sleep(500);
                     }
@@ -562,7 +589,7 @@ class panel extends JPanel implements ActionListener
                     xp[1]-=70;
                     pos2=53;
                     j[1]-=3;
-                    k[1]=2;
+                    k[1]=3;
                     try{
                      Thread.sleep(500);
                     }
@@ -574,7 +601,7 @@ class panel extends JPanel implements ActionListener
                     xp[1]-=70;
                     pos2=41;
                     j[1]=4;
-                    k[1]=0;
+                    k[1]=1;
                     try{
                      Thread.sleep(500);
                     }
